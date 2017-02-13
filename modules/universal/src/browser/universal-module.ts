@@ -104,6 +104,7 @@ export class UniversalModule {
 
     styles.forEach((style: any) => {
       sharedStylesHost._stylesSet.add(style);
+      if (sharedStylesHost._styles)
       sharedStylesHost._styles.push(style);
     });
   }
